@@ -1,11 +1,14 @@
 import conexao from "../database/db.js"
 
+
+
+
 class SelcRepository {
 
-    const 
-
+  
     //CRUD
     create(selecao){
+
         //inserir configuração em selecao
         const sql = "INSERT INTO selecoes SET ?;"
         return new Promise((resolve, reject) => {
@@ -60,7 +63,7 @@ class SelcRepository {
          })
      }
     
-     
+
     delete(id){
 
                     //deletar a tabela com base no id
