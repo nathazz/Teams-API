@@ -8,7 +8,7 @@ const router = Router()
 //create
 router.post("/selecoes", SelecaoController.store)
 
-//read / rotas
+//read 
 router.get("/selecoes", SelecaoController.index)
 router.get("/selecoes/:id", SelecaoController.showID)
 

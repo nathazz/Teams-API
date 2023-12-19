@@ -5,7 +5,6 @@ import conexao from "../database/db.js"
 
 class SelcRepository {
 
-  
     //CRUD
     create(selecao){
 
@@ -23,7 +22,7 @@ class SelcRepository {
 
     findALL() {
                      //selecionar toda a tabela 
-        const sql = "SELECT * FROM selecoes;" //instrução sql
+        const sql = "SELECT * FROM selecoes;" 
        
         return new Promise((resolve, reject) => {
             conexao.query(sql, (error, result) => {
@@ -37,7 +36,7 @@ class SelcRepository {
 
 
     findById(id) {
-    
+                    //buscar tabela selecao com base no id
         const sql = "SELECT * FROM selecoes WHERE id=?;"
 
         return new Promise((resolve, reject) => {
