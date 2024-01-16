@@ -1,8 +1,5 @@
 import conexao from "../database/db.js"
 
-
-
-
 class SelcRepository {
 
     //CRUD

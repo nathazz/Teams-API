@@ -6,6 +6,5 @@ const Port = 3000 //Porta do site
 app.listen(Port, () =>{
     console.log(`Servidor rodando no endereço http://localhost:${Port} `)
 })
-
         
     
